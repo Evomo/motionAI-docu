@@ -7,7 +7,9 @@
 
 module.exports = {
   someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    "Getting Started": ['getStarted', 'exampleApp'],
+    "Guides": ['scan-movesense'], //"troubleshooting"
+    // "Frequently Asked Questions": ["faq"],
+    "API Reference": ['documentation', 'inDevelopment'],
   },
 };

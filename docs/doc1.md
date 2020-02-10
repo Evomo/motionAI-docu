@@ -1,7 +1,7 @@
 ---
 id: doc1
-title: Style Guide
-sidebar_label: Style Guide
+title: Markdown
+sidebar_label: Markdown
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
@@ -81,13 +81,11 @@ Some text to show that the reference links can follow later.
 
 ---
 
-## Images
-
 Here's our logo (hover to see the title text):
 
 Inline-style: ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
 
-Reference-style: ![alt text][logo]
+Reference-style:![alt text][logo] 
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
 
@@ -139,7 +137,7 @@ There must be at least 3 dashes separating each header cell. The outer pipes (|)
 
 ## Blockquotes
 
-> Blockquotes are very handy in email to emulate reply text. This line is part of the same quote.
+> Blockquotes are very handy in es to emulate reply text. This line is part of the same quote.
 
 Quote break.
 

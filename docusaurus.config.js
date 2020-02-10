@@ -1,23 +1,27 @@
 module.exports = {
   title: 'Evomo MotionAI SDK',
-  tagline: 'The tagline of my site',
+  tagline: 'Next level tracking technology',
   url: 'https://evomo.github.io',
-  baseUrl: '/motionAI/',
+  baseUrl: '/motionAI-docu/',
   favicon: 'img/favicon.ico',
-  organizationName: 'Evomo', // Usually your GitHub org/user name.
-  projectName: 'motionAI', // Usually your repo name.
+  organizationName: 'evomo', // Usually your GitHub org/user name.
+  projectName: 'motionAI-docu', // Usually your repo name.
+  themes: ['@docusaurus/theme-classic'],
   themeConfig: {
+    prism: {
+      additionalLanguages: ['swift'],
+    },
     navbar: {
       title: 'Evomo MotionAI SDK',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/evomoLogo.png',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'docs/getStarted', label: 'Documentation', position: 'left'},
+        {href: 'https:/www.evomo.de', label: 'About Evomo', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Evomo/evomoExampleApp',
           label: 'GitHub',
           position: 'right',
         },
@@ -30,12 +34,16 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: 'Get Started',
+              to: 'docs/getStarted',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: 'Documentation',
+              to: 'docs/documentation',
+            },
+            {
+              label: 'Example App',
+              to: 'docs/exampleApp',
             },
           ],
         },
@@ -44,33 +52,37 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/questions/tagged/motionaisdk',
             },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
+            // {
+            //   label: 'Discord',
+            //   href: 'https://discordapp.com/invite/docusaurus',
+            // },
           ],
         },
         {
-          title: 'Social',
+          title: 'Evomo',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Website',
+              href: 'https://www.evomo.de/',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/12959970/',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Instagram',
+              href: 'https://www.instagram.com/evomo/',
+            },
+            {
+              label: 'Facebook',
+              href: 'https://www.facebook.com/EvomoTech',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Evomo UG. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -88,4 +100,5 @@ module.exports = {
       },
     ],
   ],
+
 };
