@@ -22,7 +22,7 @@ There are currently two different versions of the SDK.
 - Basic - smartphone sensor api only
 - Movesense - smartphone sensors + Movesense api
 
-### A) CocoaPods
+### CocoaPods
 
 The Evomo MoitionAI SDK consist of a precompiled Cocoa Touch framework bundled in a XCFramework.
 
@@ -57,19 +57,7 @@ pod "EvomoMotionAI"
 pod "EvomoMotionAI/Movesense"
 ```
 
-##[Podfile example](https://github.com/Evomo/evomoExampleApp/blob/master/Podfile)
-
-### B) Manual XCFramework import
-
-1. [Download the newest XCFramework file](https://bitbucket.org/evomo/evomomotionaibinary/downloads/)
-
-2. Extract zip file and choose between BASIC and MOVESENSE bundle.
-
-3. Drag & drop .xcframework manually into your project's target
-![xcframework_drag_n_drop](/motionAI-docu/img/xcframework_drag_n_drop.gif)
-
-4. Embed & sign .xcframework in your project's target
-![xcframework_embed_sign.png](/motionAI-docu/img/xcframework_embed_sign.png)
+[**Podfile example**](https://github.com/Evomo/evomoExampleApp/blob/master/Podfile)
 
 ### Apple app store requirements (Movesense)
 For a successful approval of your app in the Apple app store, the following description entries must be made:
