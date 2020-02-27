@@ -3,10 +3,23 @@ id: getStarted
 title: Quickstart
 ---
 
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+
 ## Register for licence key
 To use our SDK a license key is required which is generated after a short registration and your acceptance of the [license terms].
 
-[**--> Register to get the license key**](https://subscriptions.zoho.eu/subscribe/a86776477592bad75f6bc8765d4c5c76a57851cb64dfe979651bdda4a1c7d344/beta)
+[<Highlight color="#FF8E34">**--> Register to get the license key**</Highlight>](https://subscriptions.zoho.eu/subscribe/a86776477592bad75f6bc8765d4c5c76a57851cb64dfe979651bdda4a1c7d344/beta)
 
 Our beta-sdk is actually completely free for non commercial usage/testing. See details in the [license terms]. 
 
@@ -21,6 +34,7 @@ Our beta-sdk is actually completely free for non commercial usage/testing. See d
 There are currently two different versions of the SDK. 
 - Basic - smartphone sensor api only
 - Movesense - smartphone sensors + Movesense api
+- ClassificationOnly - Feed external sensor data and classify it
 
 ### CocoaPods
 
@@ -55,6 +69,11 @@ pod "EvomoMotionAI"
 
 # Movesense
 pod "EvomoMotionAI/Movesense"
+
+# or
+
+# ClassificationOnly
+pod "EvomoMotionAI/ClassificationOnly"
 ```
 
 [**Podfile example**](https://github.com/Evomo/evomoExampleApp/blob/master/Podfile)
@@ -138,7 +157,7 @@ ClassificationControlLayer.shared.start(
 }, isFailed: { error in
     print("Start classification failed: \(error)")
 })
-	
+
 wait(10)
 
 // Stop movement classification

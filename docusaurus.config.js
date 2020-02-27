@@ -10,6 +10,7 @@ module.exports = {
   themeConfig: {
     prism: {
       additionalLanguages: ['swift'],
+      theme: require('prism-react-renderer/themes/nightOwl'),
     },
     navbar: {
       title: 'Evomo MotionAI SDK',

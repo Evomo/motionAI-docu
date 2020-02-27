@@ -33,3 +33,31 @@
   height: 200px;
   width: 200px;
 }
+
+/*.youtube {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  padding: 2rem 0;*/
+/*  width: 100%;*/
+/*}*/
+
+.yt-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
+
+.yt-container iframe, .yt-container object, .yt-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+/*.button.button--outline {*/
+/*  --ifm-button-background-color: #FF8E34;*/
+/*  --ifm-button-color: #FF8E34;*/
+/*}*/
