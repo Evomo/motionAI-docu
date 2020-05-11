@@ -230,6 +230,19 @@ public enum DeviceStateChange: Equatable {
 }
 ```
 
+## Error types
+
+```swift
+public enum DeviceStateChange: Equatable {
+    case energyPercent(Double)
+    case dataStraming(Bool)
+    case connected(Bool)
+    case softwareVersion(String)
+}
+```
+
+
+
 ## Scan for Movesense ble devices
 
 [Guide](scan-movesense)

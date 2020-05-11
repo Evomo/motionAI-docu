@@ -80,8 +80,19 @@ function Home() {
                 'button button--outline button--secondary button--lg evomo-orange',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/getStarted')}>
-              Get Started
+              to={useBaseUrl('docs/getStartedSwift')}>
+              Get Started with Swift
+            </Link>
+          </div>
+          <p></p>
+          <div className={styles.buttons}>
+            <Link
+                className={classnames(
+                    'button button--outline button--secondary button--lg evomo-orange',
+                    styles.getStarted,
+                )}
+                to={useBaseUrl('docs/getStartedUnity')}>
+              Get Started with Unity
             </Link>
           </div>
           <p></p>

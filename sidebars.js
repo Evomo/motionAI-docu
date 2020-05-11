@@ -7,7 +7,7 @@
 
 module.exports = {
   someSidebar: {
-    "Getting Started": ['getStarted', 'exampleApp'],
+    "Getting Started": ['getStartedSwift', 'getStartedUnity', 'exampleApp'],
     "Guides": ['scan-movesense'], //"troubleshooting"
     // "Frequently Asked Questions": ["faq"],
     "API Reference": ['documentation', 'inDevelopment'],

@@ -20,7 +20,7 @@ module.exports = {
       },
       links: [
         {to: 'docs/getStarted', label: 'Documentation', position: 'left'},
-        {href: 'https:/www.evomo.de', label: 'About Evomo', position: 'left'},
+        {href: 'https://www.evomo.de', label: 'About Evomo', position: 'left'},
         {
           href: 'https://github.com/Evomo/evomoExampleApp',
           label: 'GitHub',
